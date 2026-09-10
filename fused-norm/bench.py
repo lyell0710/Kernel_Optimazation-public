@@ -21,7 +21,7 @@ import torch
 from torch.utils.cpp_extension import load
 
 HERE = pathlib.Path(__file__).resolve().parent
-PEAK_GBPS = 1008.0          # RTX 4090 GDDR6X 理论峰值(ENV.md)
+PEAK_GBPS = 1008.0          # RTX 4090 GDDR6X 理论峰值
 
 # ---------------------------------------------------------------------------
 # 可选的 Triton 臂:实现在姊妹仓 triton-kernels/src/llm_fused.py(它的正主),

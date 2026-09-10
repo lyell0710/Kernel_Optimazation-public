@@ -1,8 +1,8 @@
 // 把本仓的 CUDA kernel 暴露成 torch 扩展,唯一目的是让它与姊妹仓 triton-kernels
 // 的 Triton 实现能在**同一个 Python 进程、同一份数据、同一套计时协议**下对照。
 //
-// 为什么需要它:LEDGER 红线「一切 vs Triton/sdpa 数字为跨 harness 推断级」的
-// 解锁条件就是同 harness 复测。EXP-K05 的三个融合逐元素算子做到了(它们本就是
+// 为什么需要它:「一切 vs Triton/sdpa 数字为跨 harness 推断级」这一限制的
+// 解除条件就是同 harness 复测。EXP-K05 的三个融合逐元素算子做到了(它们本就是
 // torch 扩展),而 gemm/flash-attn 是纯 C++ bench —— 两边用各自的 harness 测,
 // 计时方式、warmup、数据都不同,所以只能算推断级。这个绑定消除该不对称。
 //

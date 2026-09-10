@@ -4,6 +4,13 @@
 
 本项目考察手写 CUDA kernel 在什么条件下能赢过 cuBLAS / PyTorch，凭什么赢，又被哪一层机制限制。十个算子（reduce、softmax、gemv、int8 quantize、Tensor Core GEMM、FA2 forward，LLM 前向的三个融合逐元素算子 fused_add_rmsnorm、RoPE、silu_and_mul，以及完整的 W8A8 linear 链路）各自构成一条完整的优化版本梯：从 naive 实现逐级改进至打平或反超通用库，每一步提速可测量、可归因、可复现。测量显示，赢的三种形态（shape 特化、贴合硬件的极简结构、kernel 融合）与输的结构性原因（如 wmma 的架构税）都能落到具体机制上。方法论、逐项目拆解与跨项目规律见 [PORTFOLIO.md](PORTFOLIO.md)。
 
+## 关于本仓
+
+本仓是本项目的**公开展示版**，收录内容以可复现、可核验为限：
+
+- **收录**：十个算子的 CUDA kernel 源码与版本梯、benchmark 原始数据（`*/project-proof/data/`、`records/data/` 下的 CSV）、性能图表、采集与绘图脚本、各算子 README 与 [PORTFOLIO.md](PORTFOLIO.md)。
+- **未收录**：实验方法论文档、逐实验推导与记录、讲义与手写笔记、以及采集用的 `.ncu-rep` / `.nsys-rep` profiler 二进制原件。因此正文引用的「EXP-Kxx」为实验编号，其完整记录不随本仓提供；文中所有结论均可由本仓收录的数据与脚本复现或核验。
+
 ## 性能结果
 
 测量均在 RTX 4090 上进行；凡未另注，数字为 3 轮 mean±std。

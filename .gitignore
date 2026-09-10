@@ -16,3 +16,6 @@ artifacts/ncu_for_mac/reports/
 artifacts/ncu_for_mac/ncu_for_mac_all.tar.gz
 artifacts/ncu_for_mac/ncu_for_mac_all.tar.gz.sha256
 *.sqlite
+
+__pycache__/
+*.pyc

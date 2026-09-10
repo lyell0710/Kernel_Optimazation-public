@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """同 harness 复测:本仓 CUDA kernel vs 姊妹仓 triton-kernels 的 Triton 实现。
 
-解锁 LEDGER 红线「一切 vs Triton/sdpa 数字为跨 harness,推断级」。
+为「一切 vs Triton/sdpa 数字为跨 harness,推断级」这一限制提供解除条件。
 要点是消除四处不对称——**同一进程、同一份数据、同一套 warmup/计时协议、同一次会话**。
 此前 CUDA 侧走 C++ bench、Triton 侧走 Python bench,四项全不同,故只能算推断级。
 
@@ -13,7 +13,7 @@ import torch
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
-TSRC = os.environ.get("TRITON_KERNELS_SRC", "$HOME/triton-kernels/src")
+TSRC = os.environ.get("TRITON_KERNELS_SRC", os.path.expanduser("~/triton-kernels/src"))
 ROUNDS = int(os.environ.get("ROUNDS", "3"))
 ITERS  = int(os.environ.get("ITERS", "50"))
 WARMUP = int(os.environ.get("WARMUP", "20"))

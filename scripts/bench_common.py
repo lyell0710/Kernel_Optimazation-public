@@ -16,7 +16,7 @@ import sys
 
 import torch
 
-PEAK_GBPS = 1008.0     # RTX 4090 GDDR6X 理论峰值(ENV.md);超过它即说明数据落在 L2
+PEAK_GBPS = 1008.0     # RTX 4090 GDDR6X 理论峰值;超过它即说明数据落在 L2
 
 
 def build_ext(name, here, sources, include=None):
