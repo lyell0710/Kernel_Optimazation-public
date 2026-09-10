@@ -1,0 +1,2 @@
+gpu_name,gpu_memory_mib,driver_version,cuda_runtime_version,cuda_toolkit_nvcc,os,cpu,cmake_version,compiler,input_size,baseline_launch,block_size,timing_method,warmup,profiling_note
+NVIDIA GeForce RTX 4070 Laptop GPU,8188,596.21,13.2,11.5.119,"Ubuntu 24.04.3 LTS (WSL2, Linux 6.6.87.2-microsoft-standard-WSL2)","AMD Ryzen 9 7945HX with Radeon Graphics",4.3.0,"g++ 11.4.0","1<<24","<<<1,1>>>",256,"CUDA events",true,"Nsight Compute kernel profiling is not supported under this WSL setup"

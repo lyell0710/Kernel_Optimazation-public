@@ -1,0 +1,13 @@
+# provenance: env=4090-main-container sha=9596b43 cmd="REDUCE_N=268435456 ./build/reduce_bench (calfix hbm r2)" date=2026-08-29T09:00:47Z gpu="NVIDIA GeForce RTX 4090" driver=610.57.04
+version,cpu_result,gpu_result,diff,latency_ms,speedup,correctness_pass
+baseline,1.67772e+07,0.00000e+00,1.6777e+07,0.000000,-nan,false
+v0,1.67772e+07,2.68435e+08,2.5166e+08,1.753752,0.00,false
+v1,1.67772e+07,2.68435e+08,2.5166e+08,1.749629,0.00,false
+v2,1.67772e+07,2.68435e+08,2.5166e+08,1.818520,0.00,false
+v3,1.67772e+07,2.68435e+08,2.5166e+08,1.450000,0.00,false
+v4,1.67772e+07,2.68435e+08,2.5166e+08,1.465753,0.00,false
+v5,1.67772e+07,2.68435e+08,2.5166e+08,1.585692,0.00,false
+v6,1.67772e+07,2.68435e+08,2.5166e+08,1.126530,0.00,false
+v7,1.67772e+07,2.68435e+08,2.5166e+08,1.126280,0.00,false
+cuBLAS,1.67772e+07,2.68435e+08,2.5166e+08,1.146256,0.00,false
+CUB,1.67772e+07,2.68435e+08,2.5166e+08,1.127315,0.00,false

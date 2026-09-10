@@ -1,0 +1,8 @@
+# provenance: env=4090-container sha=ccccc89 cmd="./build/int8_quantize_bench (stability r1)" date=2026-08-24T18:03:31Z gpu="NVIDIA GeForce RTX 4090" driver=610.57.04
+version,channels,hw,latency_ms,speedup_vs_baseline,max_abs_err,correctness_pass
+baseline,1024,1024,104.518730,1.00,1.1811e-02,true
+v0,1024,1024,0.007673,13621.70,1.1811e-02,true
+v1,1024,1024,0.006863,15229.94,1.1811e-02,true
+v2,1024,1024,0.007142,14634.22,1.1811e-02,true
+v3,1024,1024,0.005958,17541.42,1.1811e-02,true
+v4,1024,1024,0.005564,18783.21,1.1811e-02,true

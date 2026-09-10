@@ -1,0 +1,8 @@
+# provenance: env=4090-container sha=71456f3 cmd="BENCH_ITERS=50 gemm_bench" date=2026-08-24T15:17:39Z gpu="NVIDIA GeForce RTX 4090" driver=13.3
+version,m,n,k,latency_ms,tflops,speedup_vs_v0,max_rel_err,correctness_pass
+v0,4096,4096,4096,26.0663,5.3,1.00,7.58e-04,true
+v1,4096,4096,4096,21.1679,6.5,1.23,7.58e-04,true
+v2_wmma,4096,4096,4096,1.5278,90.0,17.06,7.58e-04,true
+v3_dbuf,4096,4096,4096,1.4475,94.9,18.01,7.58e-04,true
+v4_bigtile,4096,4096,4096,1.0409,132.0,25.04,7.58e-04,true
+cublas,4096,4096,4096,0.8831,155.6,29.52,0.00e+00,true

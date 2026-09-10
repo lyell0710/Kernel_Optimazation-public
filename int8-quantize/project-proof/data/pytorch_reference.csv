@@ -1,0 +1,3 @@
+version,latency_ms,note
+pytorch_eager_cuda,0.043723,(x/s).round().clamp().to(int8) on CUDA
+pytorch_official_cpu,2.996696,torch.quantize_per_channel (CPU only)

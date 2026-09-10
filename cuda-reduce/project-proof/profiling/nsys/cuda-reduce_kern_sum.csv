@@ -1,0 +1,14 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+99.7,3094459425,21,147355210.7,145853871.0,145823927,173514946,6054025.0,"reduce_baseline_kernel(const float *, float *, int)"
+0.1,1943404,63,30847.7,1312.0,1120,90558,42214.1,"void <unnamed>::reduce_v1_kernel<(int)256>(const float *, float *, int)"
+0.1,1941387,63,30815.7,1312.0,1152,90430,42168.7,"void <unnamed>::reduce_v0_kernel<(int)256>(const float *, float *, int)"
+0.1,1909771,63,30313.8,1312.0,1120,88958,41458.6,"void <unnamed>::reduce_v2_kernel<(int)256>(const float *, float *, int)"
+0.0,1079429,63,17133.8,1184.0,1120,49375,22759.5,"void <unnamed>::reduce_v3_kernel<(int)256>(const float *, float *, int)"
+0.0,672333,63,10672.0,1120.0,1088,29951,13621.4,"void <unnamed>::reduce_v4_kernel<(int)256>(const float *, float *, int)"
+0.0,659183,63,10463.2,1088.0,1056,29343,13386.8,"void <unnamed>::reduce_v5_kernel<(int)256>(const float *, float *, int)"
+0.0,394231,42,9386.5,9279.5,1184,17824,8300.8,"void <unnamed>::reduce_v7_kernel<(int)256>(const float *, float *, int)"
+0.0,393588,42,9371.1,9312.0,1183,17695,8285.0,"void <unnamed>::reduce_v6_kernel<(int)256>(const float *, float *, int)"
+0.0,356567,42,8489.7,8431.5,1471,15616,7086.1,"void asum_kernel<int, float, float>(cublasAsumParams<T2, T3>)"
+0.0,287033,21,13668.2,13632.0,13568,13952,99.9,"void cub::_V_300200_SM_750::detail::reduce::DeviceReduceKernel<cub::_V_300200_SM_750::detail::reduce::policy_hub<float, unsigned int, cuda::std::__4::plus<void>>::Policy1000, const float *, unsigned int, cuda::std::__4::plus<void>, float, cuda::std::__4::identity>(T2, T5 *, T3, cub::_V_300200_SM_750::GridEvenShare<T3>, T4, T6)"
+0.0,32928,21,1568.0,1568.0,1536,1632,20.2,"void cub::_V_300200_SM_750::detail::reduce::DeviceReduceSingleTileKernel<cub::_V_300200_SM_750::detail::reduce::policy_hub<float, unsigned int, cuda::std::__4::plus<void>>::Policy1000, float *, float *, int, cuda::std::__4::plus<void>, float, float, cuda::std::__4::identity>(T2, T3, T4, T5, T6, T8)"
+

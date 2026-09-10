@@ -1,0 +1,18 @@
+build/
+*.o
+*.so
+*.a
+*.out
+*.log
+
+.venv/
+.venv-*/
+build/
+*.o
+
+# NCU/nsys 派生物:可由脚本从原件重建,不入库(CORE 铁律1 单一事实源)
+# .ncu-rep 原件在各算子 project-proof/profiling/ncu/;下面这些是它们的副本或中间件
+artifacts/ncu_for_mac/reports/
+artifacts/ncu_for_mac/ncu_for_mac_all.tar.gz
+artifacts/ncu_for_mac/ncu_for_mac_all.tar.gz.sha256
+*.sqlite

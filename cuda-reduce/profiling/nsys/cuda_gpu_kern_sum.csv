@@ -1,0 +1,13 @@
+Generating SQLite file profiling/nsys/reduce_bench.sqlite from profiling/nsys/reduce_bench.nsys-rep
+Processing [profiling/nsys/reduce_bench.sqlite] with [/opt/nvidia/nsight-systems/2025.6.3/host-linux-x64/reports/cuda_gpu_kern_sum.py](base)... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+99.3,35221809281,101,348730785.0,348063346.0,347989720,415114338,6671707.5,reduce_baseline_kernel
+0.1,42791557,303,141226.3,3584.0,1536,428700,196545.2,reduce_v1_kernel
+0.1,42309583,303,139635.6,3552.0,1664,422940,194078.6,reduce_v2_kernel
+0.1,38218741,303,126134.5,3136.0,1536,373948,175324.6,reduce_v0_kernel
+0.1,27691931,303,91392.5,2240.0,1632,270910,126686.3,reduce_v3_kernel
+0.1,27640785,303,91223.7,2080.0,1536,270685,126617.7,reduce_v4_kernel
+0.1,27622650,303,91163.9,2048.0,1472,270589,126620.9,reduce_v5_kernel
+0.1,27508749,202,136181.9,135870.5,1824,272925,134674.6,reduce_v6_kernel
+0.1,27440632,202,135844.7,135710.5,1792,270813,134339.5,reduce_v7_kernel
+

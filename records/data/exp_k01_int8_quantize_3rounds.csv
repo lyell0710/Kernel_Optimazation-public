@@ -1,0 +1,8 @@
+# provenance: derived from int8-quantize/project-proof/data/*_int8-quantize_stability_r{1,2,3}.csv (scripts/stability_rebench.sh, 2026-08-24)
+key,latency_ms_mean,latency_ms_std,rel_std_pct
+baseline|1024|1024,104.487,0.0275,0.03
+v0|1024|1024,0.008261,0.00109,13.23
+v1|1024|1024,0.006779,7.52e-05,1.11
+v2|1024|1024,0.00713667,7.02e-05,0.98
+v3|1024|1024,0.00594567,3.52e-05,0.59
+v4|1024|1024,0.00556967,3.09e-05,0.55

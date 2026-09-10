@@ -1,0 +1,8 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+41.1,186993794,7,26713399.1,26965785.0,25889080,26969081,446905.2,"gemm_v0_kernel(const __half *, const __half *, __half *, int, int, int)"
+32.7,148857259,7,21265322.7,21084002.0,21071042,22366462,485600.2,"gemm_v1_kernel(const __half *, const __half *, __half *, int, int, int)"
+8.2,37085269,24,1545219.5,1551267.5,1510581,1566291,16369.6,"gemm_v2_kernel(const __half *, const __half *, __half *, int, int, int)"
+7.6,34544992,24,1439374.7,1437335.0,1423095,1452087,6444.4,"gemm_v3_kernel(const __half *, const __half *, __half *, int, int, int)"
+5.4,24668667,24,1027861.1,1025251.0,1019203,1039362,6026.3,"gemm_v4_kernel(const __half *, const __half *, __half *, int, int, int)"
+5.0,22634902,25,905396.1,906566.0,860391,912070,9636.3,ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn
+

@@ -1,0 +1,9 @@
+# provenance: derived from gemv/project-proof/data/*_gemv_stability_r{1,2,3}.csv (scripts/stability_rebench.sh, 2026-08-24)
+key,latency_ms_mean,latency_ms_std,rel_std_pct
+baseline|4096|2048,0.113171,0.000138,0.12
+cublas|4096|2048,0.017432,0.000169,0.97
+v0|4096|2048,0.014513,9.03e-05,0.62
+v1|4096|2048,0.014798,0.000397,2.68
+v2|4096|2048,0.0148337,6.6e-05,0.45
+v3|4096|2048,0.012651,3.08e-05,0.24
+v4|4096|2048,0.0165893,3.87e-05,0.23

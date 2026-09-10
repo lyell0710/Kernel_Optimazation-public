@@ -1,0 +1,13 @@
+# provenance: env=4090-container sha=ccccc89 cmd="./build/softmax_bench (stability r2)" date=2026-08-24T18:03:16Z gpu="NVIDIA GeForce RTX 4090" driver=610.57.04
+version,rows,cols,latency_ms,speedup_vs_v0,max_diff,correctness_pass
+v0,1024,1024,0.009550,1.00,6.9849e-09,true
+v1,1024,1024,0.009426,1.01,6.9849e-09,true
+v2,1024,1024,0.009369,1.02,6.9849e-09,true
+v3,1024,1024,0.009028,1.06,6.9849e-09,true
+v4,1024,1024,0.007523,1.27,6.9849e-09,true
+v4.2,1024,1024,0.009900,0.96,6.9849e-09,true
+cublas,1024,1024,0.009336,1.02,6.9849e-09,true
+v4_mis,1024,1500,0.009933,1.00,5.1223e-09,true
+v4.3_mis,1024,1500,0.010205,0.97,5.1223e-09,true
+v4.4_mis,1024,1500,0.011048,0.90,5.1223e-09,true
+cublas_mis,1024,1500,0.012750,0.78,5.3551e-09,true

@@ -1,0 +1,8 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+39.0,1417221503,168,8435842.3,1594051.0,140156,28869555,10363171.1,"fa2_v0_kernel(const __half *, const __half *, const __half *, __half *, int, int, int, bool)"
+37.6,1365138473,168,8125824.2,1814108.5,154140,32620969,9725145.0,"fa2_v1_kernel(const __half *, const __half *, const __half *, __half *, int, int, int, bool)"
+8.8,320447517,168,1907425.7,458275.5,94781,5857052,2167511.4,"fa2_v2_kernel(const __half *, const __half *, const __half *, __half *, int, int, int, bool)"
+6.6,240516963,168,1431648.6,343830.5,71070,4204427,1624938.4,"fa2_v3_kernel(const __half *, const __half *, const __half *, __half *, int, int, int, bool)"
+6.2,224825820,168,1338248.9,321063.0,66526,3930098,1517665.2,"fa2_v4_kernel(const __half *, const __half *, const __half *, __half *, int, int, int, bool)"
+1.8,66398794,8,8299849.3,1933304.5,232377,41115450,13894490.4,"ref_kernel(const __half *, const __half *, const __half *, __half *, int, int, int, bool)"
+

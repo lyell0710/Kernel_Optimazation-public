@@ -1,0 +1,13 @@
+Generating SQLite file profiling/nsys/reduce_bench.sqlite from profiling/nsys/reduce_bench.nsys-rep
+Processing [profiling/nsys/reduce_bench.sqlite] with [/opt/nvidia/nsight-systems/2025.6.3/host-linux-x64/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+97.4,34836063720,900,38706737.5,3562.0,2374,348577509,109436240.2,cudaEventSynchronize
+1.2,415421404,9,46157933.8,3562.0,3562,415121016,138361183.9,cudaDeviceSynchronize
+0.7,233739335,1921,121675.9,3562.0,1187,433365,160241.9,cudaFree
+0.4,148025641,102,1451231.8,1439010.0,1294159,2008914,70878.9,cudaGetDeviceProperties
+0.3,102690920,1922,53429.2,2374.0,1187,98437990,2245310.4,cudaMalloc
+0.0,8076027,616,13110.4,4749.0,3561,5078089,204414.4,cudaMemcpy
+0.0,7493075,2323,3225.6,3562.0,2374,29682,1063.7,cudaLaunchKernel
+0.0,4267171,1800,2370.7,2375.0,1187,10686,725.6,cudaEventRecord
+0.0,17810,2,8905.0,8905.0,1188,16622,10913.5,cudaEventCreate
+

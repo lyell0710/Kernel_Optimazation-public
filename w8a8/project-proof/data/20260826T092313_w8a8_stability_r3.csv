@@ -1,0 +1,46 @@
+# provenance: env=venv:/root/venvs/main sha=8f04d6b cmd="BENCH_ITERS=0 python bench.py" date=2026-08-26T09:23:15Z gpu="NVIDIA GeForce RTX 4090" driver=610.57.04 cuda=13.2 torch=2.13.0+cu132
+shape,arm,T,H,O,latency_ms,tflops_or_tops,speedup_vs_bf16,max_rel_err,correctness_pass
+T512_O4096,bf16_cublas,512,4096,4096,0.109414,157.0,1.000,0.000e+00,true
+T512_O4096,w8a8_v0(quant_v0+dequant_v0),512,4096,4096,0.069458,247.3,1.575,1.055e-02,true
+T512_O4096,w8a8_best(quant_v2+dequant_v1),512,4096,4096,0.057472,298.9,1.904,1.055e-02,true
+T512_O4096,w8a8_best_weight_rowmajor,512,4096,4096,0.140257,122.5,0.780,1.055e-02,true
+T512_O4096,step_quant_v2,512,4096,4096,0.006477,2652.5,16.893,nan,
+T512_O4096,step_int8gemm_col,512,4096,4096,0.048538,353.9,2.254,nan,
+T512_O4096,step_int8gemm_row,512,4096,4096,0.129208,133.0,0.847,nan,
+T512_O4096,step_dequant_v1,512,4096,4096,0.006692,2567.3,16.350,nan,
+T512_O12288,bf16_cublas,512,4096,12288,0.337510,152.7,1.000,0.000e+00,true
+T512_O12288,w8a8_v0(quant_v0+dequant_v0),512,4096,12288,0.190136,271.1,1.775,1.055e-02,true
+T512_O12288,w8a8_best(quant_v2+dequant_v1),512,4096,12288,0.174879,294.7,1.930,1.055e-02,true
+T512_O12288,w8a8_best_weight_rowmajor,512,4096,12288,0.448845,114.8,0.752,1.055e-02,true
+T512_O12288,step_quant_v2,512,4096,12288,0.006390,8066.0,52.821,nan,
+T512_O12288,step_int8gemm_col,512,4096,12288,0.147835,348.6,2.283,nan,
+T512_O12288,step_int8gemm_row,512,4096,12288,0.387564,133.0,0.871,nan,
+T512_O12288,step_dequant_v1,512,4096,12288,0.011172,4613.3,30.211,nan,
+T2048_O12288,bf16_cublas,2048,4096,12288,1.314427,156.8,1.000,0.000e+00,true
+T2048_O12288,w8a8_v0(quant_v0+dequant_v0),2048,4096,12288,0.662180,311.3,1.985,1.136e-02,true
+T2048_O12288,w8a8_best(quant_v2+dequant_v1),2048,4096,12288,0.609188,338.4,2.158,1.136e-02,true
+T2048_O12288,w8a8_best_weight_rowmajor,2048,4096,12288,1.786675,115.4,0.736,1.136e-02,true
+T2048_O12288,step_quant_v2,2048,4096,12288,0.010649,19359.5,123.432,nan,
+T2048_O12288,step_int8gemm_col,2048,4096,12288,0.475279,433.8,2.766,nan,
+T2048_O12288,step_int8gemm_row,2048,4096,12288,1.734062,118.9,0.758,nan,
+T2048_O12288,step_dequant_v1,2048,4096,12288,0.162683,1267.2,8.080,nan,
+T8192_O12288,bf16_cublas,8192,4096,12288,5.161554,159.8,1.000,0.000e+00,true
+T8192_O12288,w8a8_v0(quant_v0+dequant_v0),8192,4096,12288,2.668974,309.0,1.934,1.351e-02,true
+T8192_O12288,w8a8_best(quant_v2+dequant_v1),8192,4096,12288,2.456781,335.7,2.101,1.351e-02,true
+T8192_O12288,w8a8_best_weight_rowmajor,8192,4096,12288,7.339377,112.4,0.703,1.351e-02,true
+T8192_O12288,step_quant_v2,8192,4096,12288,0.107069,7701.9,48.208,nan,
+T8192_O12288,step_int8gemm_col,8192,4096,12288,1.787924,461.2,2.887,nan,
+T8192_O12288,step_int8gemm_row,8192,4096,12288,6.767186,121.9,0.763,nan,
+T8192_O12288,step_dequant_v1,8192,4096,12288,0.649380,1269.9,7.948,nan,
+decode_T1_O4096,int8gemm_lib,1,4096,4096,nan,nan,nan,nan,RuntimeError:self.size(0) needs to be greater than 16, but got 1
+decode_T1_O4096_L2,bf16_cublas_gemv,1,4096,4096,0.038363,874.7,1.000,0.000e+00,true
+decode_T1_O4096_L2,int8_gemv_v0,1,4096,4096,0.007206,2328.3,5.324,1.157e-02,true
+decode_T1_O4096_L2,int8_gemv_v1_smem,1,4096,4096,0.007206,2328.1,5.323,1.157e-02,true
+decode_T1_O12288,int8gemm_lib,1,4096,12288,nan,nan,nan,nan,RuntimeError:self.size(0) needs to be greater than 16, but got 1
+decode_T1_O12288_HBM,bf16_cublas_gemv,1,4096,12288,0.107343,937.8,1.000,0.000e+00,true
+decode_T1_O12288_L2,int8_gemv_v0,1,4096,12288,0.012103,4158.7,8.869,1.157e-02,true
+decode_T1_O12288_L2,int8_gemv_v1_smem,1,4096,12288,0.012994,3873.4,8.261,1.157e-02,true
+decode_T1_O32768,int8gemm_lib,1,4096,32768,nan,nan,nan,nan,RuntimeError:self.size(0) needs to be greater than 16, but got 1
+decode_T1_O32768_HBM,bf16_cublas_gemv,1,4096,32768,0.282030,951.8,1.000,0.000e+00,true
+decode_T1_O32768_HBM,int8_gemv_v0,1,4096,32768,0.143092,938.0,1.971,1.389e-02,true
+decode_T1_O32768_HBM,int8_gemv_v1_smem,1,4096,32768,0.143186,937.4,1.970,1.389e-02,true

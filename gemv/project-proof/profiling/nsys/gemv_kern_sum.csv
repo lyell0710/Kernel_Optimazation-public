@@ -1,0 +1,9 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+62.1,2306977,21,109856.0,109757.0,109405,110813,295.0,"<unnamed>::gemv_baseline_kernel(const float *, const float *, float *, int, int)"
+7.4,275672,21,13127.2,13088.0,12959,13600,156.5,"void <unnamed>::gemv_v4_kernel<(int)128, (int)4>(const float *, const float *, float *, int, int)"
+6.6,246618,21,11743.7,11712.0,11583,12224,135.8,"void <unnamed>::gemv_v2_kernel<(int)256, (int)4>(const float *, const float *, float *, int, int)"
+6.3,234009,21,11143.3,11136.0,10912,11552,127.1,"void <unnamed>::gemv_v1_kernel<(int)256>(const float *, const float *, float *, int, int)"
+6.3,232921,21,11091.5,11071.0,10944,11551,130.9,"void <unnamed>::gemv_v0_kernel<(int)256>(const float *, const float *, float *, int, int)"
+6.1,224922,21,10710.6,10656.0,10464,11008,136.2,"void gemv2T_kernel_val<int, int, float, float, float, float, (int)128, (int)16, (int)4, (int)4, (bool)0, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T13, T6, T6)"
+5.2,194139,21,9244.7,9215.0,9088,9600,130.4,"<unnamed>::gemv_v3_kernel(const float *, const float *, float *, int, int)"
+

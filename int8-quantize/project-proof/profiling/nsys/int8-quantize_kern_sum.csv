@@ -1,0 +1,8 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+100.0,2225688678,21,105985175.1,104461307.0,104460701,118006025,4137003.6,"<unnamed>::quantize_baseline_kernel(const float *, const float *, signed char *, int, int)"
+0.0,93752,21,4464.4,4448.0,4415,4640,43.8,"<unnamed>::quantize_v0_kernel(const float *, const float *, signed char *, int, int)"
+0.0,77471,21,3689.1,3680.0,3584,3840,63.3,"<unnamed>::quantize_v2_kernel(const float *, const float *, signed char *, int, int)"
+0.0,74558,21,3550.4,3552.0,3520,3584,21.3,"<unnamed>::quantize_v1_kernel(const float *, const float *, signed char *, int, int)"
+0.0,55775,21,2656.0,2656.0,2624,2688,20.2,"<unnamed>::quantize_v3_kernel(const float *, const float *, signed char *, int, int)"
+0.0,46334,21,2206.4,2208.0,2144,2272,31.1,"<unnamed>::quantize_v4_kernel(const float *, const float *, signed char *, int, int)"
+

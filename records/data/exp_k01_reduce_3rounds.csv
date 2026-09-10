@@ -1,0 +1,5 @@
+# provenance: env=cuda13.2 sha=d4aecbb cmd="reduce_bench x3 rounds (整改项: 头条数字 3 轮转正)" date=2026-08-24T01:14:45Z gpu="NVIDIA GeForce RTX 4090" driver=610.57.04
+version,round1_ms,round2_ms,round3_ms,mean_ms,std_ms
+v7,0.030001,0.029850,0.029797,0.02988,0.00011
+cuBLAS,0.037256,0.037396,0.036965,0.03721,0.00022
+v4,0.057349,0.056649,0.056802,0.05693,0.00037

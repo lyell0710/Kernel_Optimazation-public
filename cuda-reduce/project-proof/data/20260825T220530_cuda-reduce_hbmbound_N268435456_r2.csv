@@ -1,0 +1,13 @@
+# provenance: env=4090-container sha=33c6fff cmd="REDUCE_SKIP_BASELINE=1 REDUCE_N=268435456 ./build/reduce_bench (HBM-bound, r2)" date=2026-08-25T22:05:33Z gpu="NVIDIA GeForce RTX 4090" driver=610.57.04
+version,cpu_result,gpu_result,diff,latency_ms,speedup,correctness_pass
+baseline,1.67772e+07,0.00000e+00,1.6777e+07,0.000000,-nan,false
+v0,1.67772e+07,2.68435e+08,2.5166e+08,1.921608,0.00,false
+v1,1.67772e+07,2.68435e+08,2.5166e+08,1.820609,0.00,false
+v2,1.67772e+07,2.68435e+08,2.5166e+08,1.799345,0.00,false
+v3,1.67772e+07,2.68435e+08,2.5166e+08,1.452119,0.00,false
+v4,1.67772e+07,2.68435e+08,2.5166e+08,1.451546,0.00,false
+v5,1.67772e+07,2.68435e+08,2.5166e+08,1.528136,0.00,false
+v6,1.67772e+07,2.68435e+08,2.5166e+08,1.134737,0.00,false
+v7,1.67772e+07,2.68435e+08,2.5166e+08,1.134578,0.00,false
+cuBLAS,1.67772e+07,2.68435e+08,2.5166e+08,1.148369,0.00,false
+CUB,1.67772e+07,2.68435e+08,2.5166e+08,1.127258,0.00,false
